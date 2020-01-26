@@ -1,0 +1,6 @@
+deploy:
+  provider: pypi
+  user: "__token__"
+  password: "pypi-AgEIcHlwaS5vcmcCJDljNWI4ODBmLTA0NDUtNGFjOS1hZmI1LTFmOTU0YWJjZGE0MgACJXsicGVybWlzc2lvbnMiOiAidXNlciIsICJ2ZXJzaW9uIjogMX0AAAYgJAvZpG7eU3d_v378CX0Uf1_Y2Rplq6mWdZd8ehcSlXk"
+  distributions: "sdist bdist_wheel"
+  skip_existing: true
