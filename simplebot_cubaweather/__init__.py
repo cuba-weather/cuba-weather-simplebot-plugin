@@ -5,6 +5,16 @@ import os
 from simplebot import Plugin, PluginCommand
 from cuba_weather import RCApiClient
 
+res_msg ="""
+🌐 {0}\n
+📅 {6}\n
+{1}\n
+🌡 Temperatura: {2}°C\n
+💧 Humedad: {3}%\n
+Presión atmosférica: {4} hpa\n
+🌬 Vientos: \n
+{5}
+"""
 
 class CubaWeather(Plugin):
 
@@ -35,4 +45,14 @@ class CubaWeather(Plugin):
 
             weather = api.get(ctx.text, suggestion=True)
 
-            chat.send_text(str(weather))
+            chat.send_text(
+                res_msg.format(
+                    weather.city_name,
+                    gemoji + ' ' + weather.general,
+                    weather.temperature,
+                    weather.humidity,
+                    weather.pressure,
+                    weather.wind,
+                    weather.timestamp
+                )
+            )
