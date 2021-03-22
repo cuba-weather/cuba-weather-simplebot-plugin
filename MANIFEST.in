@@ -1,1 +1,2 @@
-recursive-include simplebot_cubaweather/locale *
+include LICENSE
+include *.md
