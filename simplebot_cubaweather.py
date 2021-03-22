@@ -21,10 +21,7 @@ template = '\n\n'.join((
 def cuwtr(payload, replies):
     """Buscar información del estado del tiempo en Cuba usando cuba-weather de redcuba.cu"""
     if payload:
-        api = RCApiClient()
-
-        weather = api.get(payload, suggestion=True)
-
+        weather = RCApiClient().get(payload, suggestion=True)
         replies.add(
             text=template.format(
                 weather.city_name,
