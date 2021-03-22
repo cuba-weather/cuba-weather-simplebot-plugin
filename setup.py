@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 import re
-import os
 
 from setuptools import setup
 
