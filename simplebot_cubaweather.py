@@ -20,10 +20,7 @@ template = '\n\n'.join((
 @simplebot.command
 def cuwtr(payload, replies):
     """Buscar información del estado del tiempo en Cuba usando cuba-weather de redcuba.cu"""
-    if not payload:
-        replies.add(
-            text='Envíame una localidad de Cuba, ej.: /cuwtr Santiago')
-    else:
+    if payload:
         api = RCApiClient()
 
         weather = api.get(payload, suggestion=True)
@@ -39,6 +36,9 @@ def cuwtr(payload, replies):
                 weather.wind,
             )
         )
+    else:
+        replies.add(
+            text='Envíame una localidad de Cuba, ej.: /cuwtr Santiago')
 
 
 class TestCuwtr:
