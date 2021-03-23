@@ -23,7 +23,7 @@ setup(
         'Development Status :: 3 - Alpha',
         'Environment :: Plugins',
         'Programming Language :: Python :: 3',
-        'License :: OSI Approved :: MIT License',
+        'License :: LGPL-3.0 License',
         'Operating System :: OS Independent',
         'Topic :: Utilities'
     ],
