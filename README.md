@@ -2,19 +2,19 @@
 
 ### The SimpleBot Contributors
 
-Cuba Weather plugin for [SimpleBot](https://github.com/adbenitez/simplebot), a [Delta Chat](http://delta.chat/) bot
+Cuba Weather plugin for [SimpleBot][simplebot], a [Delta Chat](http://delta.chat/) bot
 
 ### Install dependencies
 
 ```bash
-pip install git+https://github.com/adbenitez/simplebot
+pip install git+https://github.com/simplebot-org/simplebot
 ```
 
 ```bash
 pip install git+https://github.com/cuba-weather/cuba-weather-python
 ```
 
-And run simplebot instance, more info in [SimpleBot](https://github.com/adbenitez/simplebot)
+For info about how to setup simplebot, check [simplebot project][simplebot]
 
 ### Install this package
 
@@ -27,3 +27,5 @@ or
 ```bash
 pip install git+https://github.com/cuba-weather/cuba-weather-simplebot-plugin
 ```
+
+[simplebot]: https://github.com/simplebot-org/simplebot
