@@ -18,7 +18,7 @@ setup(
     long_description='For more info visit https://github.com/simplebot-org/simplebot and https://github.com/cuba-weather',
     long_description_content_type='text/x-rst',
     url='https://github.com/cuba-weather/cuba-weather-simplebot-plugin',
-    license='MIT',
+    license='LGPL-3.0',
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Environment :: Plugins',
